@@ -9,7 +9,7 @@ df = spark.range(0, 10 * 1000 * 1000).withColumn('id', (col('id') / 10000).cast(
 df.cache()
 df.count()
 
-df.show()
+df.show(20)
 
 # COMMAND ----------
 
